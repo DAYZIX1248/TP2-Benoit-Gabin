@@ -1,29 +1,30 @@
-1/mkdir TP2-Nom-Prenom
-cd TP2-Nom-Prenom
+1/
+mkdir TP2-Benoit-Gabin
+cd TP2-Benoit-Gabin
 git init
 git status
 2/
 echo "# TP2 : Gestion des branches" > README.md
 git add README.md
 git commit -m "Ajout du fichier README.md avec le titre"
-git branch -m develop
+git branch -m develop 
 3/
 git switch -c feature1
 echo "Ceci est une description du projet" >> README.md
 git add README.md
-git commit -m "Ajout d'une description du projet dans README.md"
+git commit -m "Ajout d'une description du projet dans README.md 
 4/
 git switch develop
 sed -i '2i\Modification sur develop avant merge de f1.' README.md
 git add README.md
 git commit -m "Ajout d’une phrase avant le merge de feature1"
-git merge feature1
+git merge feature 
 5/
 git switch develop
 git switch -c feature2
 sed -i '1s/.*/# TP2 - NomPrenom - Gestion des branches/' README.md
 git add README.md
-git commit -m "Modification du titre dans README.md pour feature2"
+git commit -m "Modification du titre dans README.md pour feature2
 6/
 git switch develop
 git switch -c feature3
@@ -59,8 +60,9 @@ git push -f origin develop
 git add reponses.txt
 git commit -m "Ajout du fichier de réponses du TP"
 git push
+7/
+La commande git merge permet de fusionner une branche dans une autre en conservant l'historique des deux.
+8/
+La commande git rebase permet de réécrire l’historique en appliquant les commits d’une branche par-dessus une autre …
 
-
-7/La commande git merge permet de fusionner une branche dans une autre en conservant l'historique des deux.
-8/La commande git rebase permet de réécrire l’historique en appliquant les commits d’une branche par-dessus une autre
 
